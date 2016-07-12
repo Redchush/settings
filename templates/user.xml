@@ -1,0 +1,7 @@
+<templateSet group="user">
+  <template name="sing" value=" private static DAOFactory instance;&#10;&#10;    private DAOFactory(){}&#10;&#10;    public static DAOFactory getInstance(){&#10;&#10;        if (instance == null)&#10;            synchronized (DAOFactory.class){&#10;                if (instance == null)&#10;                    instance = new DAOFactory(); &#10;            }&#10;        return instance; &#10;    }" description="sing realization" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

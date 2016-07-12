@@ -1,0 +1,7 @@
+<templateSet group="iterations">
+  <template name="itm" value="for(Map.Entry&lt;String, String&gt; entry : map.entrySet()){&#10;                String key = entry.getKey(); &#10;                String value = entry.getValue(); &#10;}" description="iterate Map" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
