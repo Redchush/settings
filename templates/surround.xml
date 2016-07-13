@@ -4,27 +4,15 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="B" value="{$SELECTION$}" description="Surround with {}" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="false" />
-      <option name="XML" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="OTHER" value="true" />
-    </context>
-  </template>
-  <template name="P" value="($SELECTION$)" description="Surround with ()" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="false" />
-      <option name="XML" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="OTHER" value="true" />
-    </context>
-  </template>
   <template name="C" value="java.util.concurrent.Callable&lt;$RET$&gt; callable = new java.util.concurrent.Callable&lt;$RET$&gt;() {&#10;  public $RET$ call() throws Exception {&#10;    $SELECTION$&#10;    $END$ &#10;  }&#10;};" description="Surround with Callable" toReformat="true" toShortenFQNames="true">
     <variable name="RET" expression="" defaultValue="&quot;java.lang.Object&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
       <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
     </context>
   </template>
   <template name="I" value="for ($ELEMENT_TYPE$ $VAR$ : $SELECTION$) {&#10;  $END$&#10;}&#10;" description="Iterate Iterable | Array in J2SDK 5.0 syntax" toReformat="true" toShortenFQNames="true">
@@ -32,8 +20,11 @@
     <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
     </context>
   </template>
 </templateSet>
