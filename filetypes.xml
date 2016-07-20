@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="deletedMethods" type="PLAIN_TEXT" />
       <mapping pattern="Connected scopes" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
